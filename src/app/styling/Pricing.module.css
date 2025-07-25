@@ -28,6 +28,10 @@
     light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
 
+.shadedtext {
+  color: light-dark(#636363ff, #c9c9c9);
+}
+
 .cardTitle {
   &::after {
     content: "";

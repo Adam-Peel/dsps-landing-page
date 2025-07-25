@@ -17,7 +17,6 @@ import {
   ListItem,
 } from "@mantine/core";
 import classes from "@/app/styling/Pricing.module.css";
-import theme from "@/app/theme";
 
 const mockdata = [
   {
@@ -64,7 +63,7 @@ export function PricingTable() {
         <Text fz="lg" fw={500} className={classes.cardTitle} mt="md">
           {feature.title}
         </Text>
-        <Text fz="sm" c="dimmed" mt="sm">
+        <Text fz="sm" className={classes.shadedtext} mt="sm">
           {feature.description}
         </Text>
       </div>
@@ -96,17 +95,8 @@ export function PricingTable() {
   ));
 
   return (
-    <Container size="lg" py="xl">
-      <Group justify="center">
-        <Badge variant="filled" size="lg">
-          Join our community
-        </Badge>
-      </Group>
-
-      <Text c="dimmed" className={classes.description} ta="center" mt="md">
-        Explain benefits here
-      </Text>
-
+    <Container size="lg">
+      <Group justify="center"></Group>
       <SimpleGrid cols={{ base: 1, md: 3 }} spacing="xl" mt={50}>
         {features}
       </SimpleGrid>

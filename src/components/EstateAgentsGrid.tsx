@@ -5,7 +5,6 @@ import {
   IconReceiptOff,
 } from "@tabler/icons-react";
 import {
-  Button,
   Container,
   Grid,
   GridCol,
@@ -15,6 +14,7 @@ import {
   Title,
 } from "@mantine/core";
 import classes from "@/app/styling/EstateAgentsGrid.module.css";
+import { PricingTable } from "./PricingTable";
 
 const features = [
   {
@@ -52,21 +52,21 @@ export function EstateAgentsGrid() {
       <Text fz="lg" mt="sm" fw={500}>
         {feature.title}
       </Text>
-      <Text c="dimmed" fz="sm">
+      <Text className={classes.shadedtext} fz="sm">
         {feature.description}
       </Text>
     </div>
   ));
 
   return (
-    <div className={classes.wrapper}>
+    <div className={classes.wrapper} id="agents">
       <Container size="lg">
         <Grid gutter={80}>
           <GridCol span={{ base: 12, md: 5 }}>
             <Title className={classes.title} order={2}>
               A full support service for estate agents.
             </Title>
-            <Text c="dimmed">
+            <Text className={classes.shadedtext}>
               Whether you're looking to branch out to become self-employed, or
               are looking to be recruited, we can help. We have a strong record
               of recruitment nationwide, and can provide expert consultancy and
@@ -80,6 +80,7 @@ export function EstateAgentsGrid() {
             </SimpleGrid>
           </GridCol>
         </Grid>
+        <PricingTable />
       </Container>
     </div>
   );

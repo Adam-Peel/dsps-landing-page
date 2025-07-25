@@ -16,15 +16,16 @@ import { PricingTable } from "@/components/PricingTable";
 
 export default function Home() {
   return (
-    <AppShell header={{ height: 60 }} padding="md">
+    <AppShell header={{ height: 56 }} padding="md">
       <AppShellHeader>
         <HeaderSimple />
       </AppShellHeader>
       <AppShellMain>
         <HeroContentLeft />
+        <div id="buyers"></div>
         <TimeLine />
         <EstateAgentsGrid />
-        <PricingTable />
+
         <Title className="text-center mt-20">
           Welcome to{" "}
           <Text

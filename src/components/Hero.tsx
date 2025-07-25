@@ -18,7 +18,7 @@ import classes from "@/app/styling/HeroContentLeft.module.css";
 
 export function HeroContentLeft() {
   return (
-    <div className={classes.hero}>
+    <div className={classes.hero} id="about">
       <Overlay
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .75) 50%)"
         opacity={1}

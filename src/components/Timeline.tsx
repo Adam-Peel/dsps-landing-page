@@ -13,7 +13,7 @@ import classes from "@/app/styling/EstateAgentsGrid.module.css";
 export default function TimeLine() {
   return (
     <Container size="lg">
-      <div className="text-center mt-10">
+      <div className="text-center mt-20">
         <Title className={classes.title} order={2}>
           Full support services for property buyers.
         </Title>
@@ -32,7 +32,7 @@ export default function TimeLine() {
             bullet={<IconListCheck size={20} />}
             title="Getting to know you"
           >
-            <Text c="dimmed" size="m">
+            <Text className={classes.shadedtext} size="m">
               We discuss your preferences to identify the best properties for
               you. We consider your portfolio mix, your preferred areas and
               types of investment or purchase, and market trends to draw up a
@@ -44,7 +44,7 @@ export default function TimeLine() {
             bullet={<IconHomeSearch size={20} />}
             title="Property search"
           >
-            <Text c="dimmed" size="m">
+            <Text className={classes.shadedtext} size="m">
               With extensive knowledge of the East Midlands especially we will
               conduct a full search of the market to find the best properties
               for you.
@@ -55,7 +55,7 @@ export default function TimeLine() {
             title="Due dilligence"
             bullet={<IconHomeCheck size={20} />}
           >
-            <Text c="dimmed" size="m">
+            <Text className={classes.shadedtext} size="m">
               We will conduct due dilligence of the market, property, area, and
               buyers to help ensure you have all the information necessary to
               make any purchase decisions.
@@ -63,7 +63,7 @@ export default function TimeLine() {
           </TimelineItem>
 
           <TimelineItem title="Site visits" bullet={<IconHomeMove size={20} />}>
-            <Text c="dimmed" size="m">
+            <Text className={classes.shadedtext} size="m">
               We conduct site visits to get a closer view of the property,
               allowing us to identify its features, query the sellers, and best
               advise you on its potential for positive yield. Site visits are
@@ -74,7 +74,7 @@ export default function TimeLine() {
             title="Negotiations"
             bullet={<IconBriefcase2 size={20} />}
           >
-            <Text c="dimmed" size="m">
+            <Text className={classes.shadedtext} size="m">
               We conduct negotiations on your behalf, using our extensive
               property research and knowledge of the market to maximise your
               value.
@@ -84,7 +84,7 @@ export default function TimeLine() {
             title="Completion"
             bullet={<IconShoppingCart size={20} />}
           >
-            <Text c="dimmed" size="m">
+            <Text className={classes.shadedtext} size="m">
               We conduct full after-care upon completion of any sale, working
               with you and your team to finalise any purchase, and close off the
               deal efficiently.
