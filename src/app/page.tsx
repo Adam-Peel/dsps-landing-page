@@ -8,6 +8,8 @@ import {
   Title,
 } from "@mantine/core";
 import Image from "next/image";
+import { HeroContentLeft } from "@/components/Hero";
+import TimeLine from "@/components/Timeline";
 
 export default function Home() {
   return (
@@ -24,6 +26,8 @@ export default function Home() {
         </Group>
       </AppShellHeader>
       <AppShellMain>
+        <HeroContentLeft />
+        <TimeLine />
         <Title className="text-center mt-20">
           Welcome to{" "}
           <Text
