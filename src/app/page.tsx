@@ -10,24 +10,21 @@ import {
 import Image from "next/image";
 import { HeroContentLeft } from "@/components/Hero";
 import TimeLine from "@/components/Timeline";
+import { EstateAgentsGrid } from "@/components/EstateAgentsGrid";
+import { HeaderSimple } from "@/components/Header";
+import { PricingTable } from "@/components/PricingTable";
 
 export default function Home() {
   return (
     <AppShell header={{ height: 60 }} padding="md">
       <AppShellHeader>
-        <Group className="h-full px-md">
-          <Image
-            className="dark:invert"
-            src="https://nextjs.org/icons/next.svg"
-            alt="logo"
-            width={100}
-            height={100}
-          />
-        </Group>
+        <HeaderSimple />
       </AppShellHeader>
       <AppShellMain>
         <HeroContentLeft />
         <TimeLine />
+        <EstateAgentsGrid />
+        <PricingTable />
         <Title className="text-center mt-20">
           Welcome to{" "}
           <Text

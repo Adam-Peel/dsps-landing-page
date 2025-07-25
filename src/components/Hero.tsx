@@ -24,7 +24,7 @@ export function HeroContentLeft() {
         opacity={1}
         zIndex={0}
       />
-      <Container className={classes.container} size="md">
+      <Container className={classes.container} size="lg">
         <Title className={classes.title}>DS Property Consultants</Title>
         <Text className={classes.description} size="xl" mt="xl">
           Providers of a wide range of services across the property sector
@@ -40,9 +40,9 @@ export function HeroContentLeft() {
           >
             <b>Estate Agents</b>
             <br />
-            We provide consulting if you are looking to go self-employed.
-            <br />
-            We have estate management agencies looking to recruit estate agents.
+            Whether you are new to the industry or looking to go self-employed,
+            we provide consultatncy and can match you with estate management
+            agencies.
           </ListItem>
 
           <ListItem
@@ -54,9 +54,8 @@ export function HeroContentLeft() {
           >
             <b>Property Investors</b>
             <br />
-            We source suitable properties to expand your portfolio.
-            <br />
-            We conduct due dilligence and negotiations to ensure quality and
+            We source suitable properties to expand your portfolio and conduct
+            thorough due dilligence and market research to ensure quality and
             yield.
           </ListItem>
           <ListItem
@@ -69,9 +68,7 @@ export function HeroContentLeft() {
             <b>Buyers</b>
             <br />
             We advise on property purchasing to ease the complexity of the
-            process.
-            <br />
-            We conduct negotiations to help ensure a fair price.
+            process, and conduct negotiations to help ensure the best price.
           </ListItem>
         </List>
       </Container>

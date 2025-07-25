@@ -22,6 +22,7 @@
 }
 
 .title {
+  font-family: Outfit, var(--mantine-font-family);
   color: var(--mantine-color-white);
   font-size: 60px;
   font-weight: 500;

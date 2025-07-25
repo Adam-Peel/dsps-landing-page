@@ -1,4 +1,4 @@
-import { Timeline, TimelineItem, Text, Container } from "@mantine/core";
+import { Timeline, TimelineItem, Text, Container, Title } from "@mantine/core";
 import {
   IconBriefcase2,
   IconHomeSearch,
@@ -8,21 +8,35 @@ import {
   IconShoppingCart,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import classes from "@/app/styling/EstateAgentsGrid.module.css";
 
 export default function TimeLine() {
   return (
-    <Container>
-      <div className="text-center mt-10">Services for property buyers</div>
+    <Container size="lg">
+      <div className="text-center mt-10">
+        <Title className={classes.title} order={2}>
+          Full support services for property buyers.
+        </Title>
+      </div>
+      <div className="mt-10">
+        If you're looking to either purchase your own home, or expand your
+        property portfolio, then take advantage of our expertise. We provide a
+        thorough service from the initial property search through to completion
+        of sales to ensure that you obtain the best information to make a
+        purchasing decision, and the best value for any purchases you do choose
+        to make.
+      </div>
       <div className="mt-10 pb-12 md:pb-20">
         <Timeline active={5} bulletSize={40} lineWidth={2} reverseActive={true}>
           <TimelineItem
             bullet={<IconListCheck size={20} />}
             title="Getting to know you"
-            lineVariant="dotted"
           >
             <Text c="dimmed" size="m">
-              We discuss your portfolio preferences to identify the best
-              properties for you.
+              We discuss your preferences to identify the best properties for
+              you. We consider your portfolio mix, your preferred areas and
+              types of investment or purchase, and market trends to draw up a
+              list of criteria for our property search.
             </Text>
           </TimelineItem>
 
@@ -66,7 +80,10 @@ export default function TimeLine() {
               value.
             </Text>
           </TimelineItem>
-          <TimelineItem title="Sold" bullet={<IconShoppingCart size={20} />}>
+          <TimelineItem
+            title="Completion"
+            bullet={<IconShoppingCart size={20} />}
+          >
             <Text c="dimmed" size="m">
               We conduct full after-care upon completion of any sale, working
               with you and your team to finalise any purchase, and close off the
