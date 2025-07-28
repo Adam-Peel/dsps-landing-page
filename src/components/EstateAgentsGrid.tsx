@@ -1,5 +1,5 @@
 import {
-  IconCircleDotted,
+  IconMap2,
   IconTrendingUp,
   IconUsersGroup,
   IconReceiptOff,
@@ -14,6 +14,7 @@ import {
   Title,
 } from "@mantine/core";
 import classes from "@/app/styling/EstateAgentsGrid.module.css";
+import AgentTimeline from "./AgentsTimeline";
 import { PricingTable } from "./PricingTable";
 
 const features = [
@@ -21,19 +22,19 @@ const features = [
     icon: IconReceiptOff,
     title: "Save on admin",
     description:
-      "We know the processes to becoming self-employed, and understand what is needed to navigate them. So offload your admin onto us, and focus on building your profile and portfolio.",
+      "We know the processes to becoming self-employed. So offload your admin onto us, and focus on building your profile and portfolio.",
+  },
+  {
+    icon: IconMap2,
+    title: "Get direction",
+    description:
+      "We provide a tailored roadmap for your progression, so you can get onto what you do best.",
   },
   {
     icon: IconTrendingUp,
     title: "Increase your work volume",
     description:
       "We provide expert consultancy on strategies to increase your own client base, and your profit margin.",
-  },
-  {
-    icon: IconCircleDotted,
-    title: "Avoid empty diaries",
-    description:
-      "We recruit for multiple agencies nationwide, ensuring there are always opportunities close to hand if you want to become self-employed.",
   },
   {
     icon: IconUsersGroup,
@@ -59,12 +60,16 @@ export function EstateAgentsGrid() {
   ));
 
   return (
-    <div className={classes.wrapper} id="agents">
-      <Container size="lg">
+    <Container
+      size="lg"
+      style={{ minHeight: "100vh", alignContent: "center" }}
+      id="agents"
+    >
+      <div className={classes.wrapper}>
         <Grid gutter={80}>
           <GridCol span={{ base: 12, md: 5 }}>
             <Title className={classes.title} order={2}>
-              A full support service for estate agents.
+              A full support service for estate agents across England.
             </Title>
             <Text className={classes.shadedtext}>
               Whether you're looking to branch out to become self-employed, or
@@ -80,8 +85,9 @@ export function EstateAgentsGrid() {
             </SimpleGrid>
           </GridCol>
         </Grid>
+        <AgentTimeline />
         <PricingTable />
-      </Container>
-    </div>
+      </div>
+    </Container>
   );
 }

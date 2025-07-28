@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 import { Burger, Button, Container, Group } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "@/app/styling/HeaderSimple.module.css";
@@ -18,7 +17,7 @@ export function HeaderSimple() {
 
   const items = links.map((link) => (
     <Link href={link.link} key={link.label}>
-      <Button>{link.label}</Button>
+      <Button variant="transparent">{link.label}</Button>
     </Link>
   ));
 

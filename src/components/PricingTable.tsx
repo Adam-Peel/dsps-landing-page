@@ -5,16 +5,13 @@ import {
   IconCheck,
 } from "@tabler/icons-react";
 import {
-  Badge,
   Card,
   CardSection,
   Container,
   Group,
   SimpleGrid,
   Text,
-  ThemeIcon,
   List,
-  ListItem,
 } from "@mantine/core";
 import classes from "@/app/styling/Pricing.module.css";
 
@@ -29,14 +26,14 @@ const mockdata = [
   {
     title: "Consultancy",
     description:
-      "Perfect for those looking for a more comprehensive service in getting started as a self-employed estate agent, but who do not need full guidance or introduction to management agencies.",
+      "Perfect for those looking for a more comprehensive service in getting started as an estate agent, or looking to go self-employed.",
     icon: IconPercentage66,
     list: ["Feature 1", "Feature 2", "Feature 3", "Feature 4"],
   },
   {
     title: "Full Service",
     description:
-      "Our fullest service, including full support, guidance, consultancy and matching you with existing networks of estate agents and managament agencies.",
+      "For any needs, we offer full support, guidance, consultancy and matching you with existing networks of estate agents and managament agencies.",
     icon: IconPercentage100,
     list: [
       "Feature 1",

@@ -7,12 +7,20 @@ import {
   IconHomeCheck,
   IconShoppingCart,
 } from "@tabler/icons-react";
-import Link from "next/link";
+
 import classes from "@/app/styling/EstateAgentsGrid.module.css";
+import { PropertyStatsGrid } from "./PropertyStats";
 
 export default function TimeLine() {
   return (
-    <Container size="lg">
+    <Container
+      style={{
+        minHeight: "100vh",
+        alignContent: "center",
+      }}
+      size="lg"
+      id="buyers"
+    >
       <div className="text-center mt-20">
         <Title className={classes.title} order={2}>
           Full support services for property buyers.
@@ -92,6 +100,7 @@ export default function TimeLine() {
           </TimelineItem>
         </Timeline>
       </div>
+      <PropertyStatsGrid />
     </Container>
   );
 }
