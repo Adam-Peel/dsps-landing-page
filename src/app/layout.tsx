@@ -6,10 +6,13 @@ import {
 } from "@mantine/core";
 import theme from "./theme";
 import "./globals.css";
+import { HeaderSimple } from "../components/Header";
+import { AppShell, AppShellHeader, AppShellMain } from "@mantine/core";
 
 export const metadata: Metadata = {
-  title: "Next App Mantine Tailwind Template",
-  description: "Next App Mantine Tailwind Template",
+  title: "DS Property Consultants",
+  description:
+    "Homepage for DS Property Consultants, experts in supporting estate and lettings agents, and property buyers.",
 };
 
 export default function RootLayout({
@@ -23,7 +26,14 @@ export default function RootLayout({
         <ColorSchemeScript />
       </head>
       <body className="antialiased">
-        <MantineProvider theme={theme}>{children}</MantineProvider>
+        <MantineProvider theme={theme}>
+          <AppShell header={{ height: 56 }} padding="md">
+            <AppShellHeader>
+              <HeaderSimple />
+            </AppShellHeader>
+            <AppShellMain>{children}</AppShellMain>
+          </AppShell>
+        </MantineProvider>
       </body>
     </html>
   );
