@@ -5,6 +5,7 @@ import { HeroContentLeft } from "@/components/Hero";
 import TimeLine from "@/components/Timeline";
 import { EstateAgentsGrid } from "@/components/EstateAgentsGrid";
 import { HeaderSimple } from "@/components/Header";
+import { Testimonials } from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -13,22 +14,13 @@ export default function Home() {
         <HeaderSimple />
       </AppShellHeader>
       <AppShellMain>
-        <HeroContentLeft />
-        <TimeLine />
-
-        <EstateAgentsGrid />
-
         <div className="flex justify-center mt-10">
-          <Text
-            inherit
-            variant="gradient"
-            component="span"
-            gradient={{ from: "pink", to: "yellow" }}
-          >
-            Orange Text
-          </Text>{" "}
           <ColorSchemesSwitcher />
         </div>
+        <HeroContentLeft />
+        <TimeLine />
+        <Testimonials />
+        <EstateAgentsGrid />
       </AppShellMain>
     </AppShell>
   );

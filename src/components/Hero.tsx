@@ -1,11 +1,5 @@
+import { IconBuildings, IconHomeSearch, IconKey } from "@tabler/icons-react";
 import {
-  IconCheck,
-  IconBuildings,
-  IconHomeSearch,
-  IconKey,
-} from "@tabler/icons-react";
-import {
-  Button,
   Container,
   Overlay,
   Text,
@@ -28,7 +22,7 @@ export function HeroContentLeft() {
         <Title className={classes.title}>DS Property Consultants</Title>
         <Text className={classes.description} size="xl" mt="xl">
           Providers of a wide range of services across the property sector
-          helping estate agents and buyers.
+          helping estate agents and buyers nationwide.
         </Text>
         <List className={classes.description} mt={30} spacing="md" size="md">
           <ListItem
@@ -41,7 +35,7 @@ export function HeroContentLeft() {
             <b>Estate Agents</b>
             <br />
             Whether you are new to the industry or looking to go self-employed,
-            we provide consultatncy and can match you with estate management
+            we provide consultancy and can match you with estate management
             agencies.
           </ListItem>
 
