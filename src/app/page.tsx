@@ -1,5 +1,5 @@
 import { ColorSchemesSwitcher } from "@/components/color-schemes-switcher";
-import { AppShell, AppShellHeader, AppShellMain, Text } from "@mantine/core";
+import { AppShell, AppShellHeader, AppShellMain } from "@mantine/core";
 
 import { HeroContentLeft } from "@/components/Hero";
 import TimeLine from "@/components/Timeline";

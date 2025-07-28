@@ -27,7 +27,7 @@ export default function TimeLine() {
         </Title>
       </div>
       <div className="mt-10">
-        If you're looking to either purchase your own home, or expand your
+        If you&rsquo;re looking to either purchase your own home, or expand your
         property portfolio, then take advantage of our expertise. We provide a
         thorough service from the initial property search through to completion
         of sales to ensure that you obtain the best information to make a

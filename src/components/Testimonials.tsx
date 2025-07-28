@@ -14,7 +14,7 @@ const data = [
     image: "https://ui.mantine.dev/_next/static/media/auditors.32124e83.svg",
     title: "Jane J",
     description:
-      "Danny was instrumental in finding me the right property, and worked seamlessly with my team ot make it happen.",
+      "Danny was instrumental in finding me the right property, and worked seamlessly with my team to make it happen.",
   },
   {
     image: "https://ui.mantine.dev/_next/static/media/lawyers.3ddb0c33.svg",
@@ -31,7 +31,7 @@ const data = [
     image: "https://ui.mantine.dev/_next/static/media/others.0a9c7795.svg",
     title: "Harry H",
     description:
-      "Speaking to DSPS was the best move I ever made. I'm now running my own show and have never been in a better place with work.",
+      "Speaking to DSPS was the best move I ever made. I am now running my own show and have never been in a better place with work.",
   },
 ];
 
@@ -44,7 +44,7 @@ export function Testimonials() {
         size={60}
         radius="md"
       >
-        <Image src={item.image} />
+        <Image src={item.image} alt="generic svg image" />
       </ThemeIcon>
 
       <div>
