@@ -1,5 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
+  basePath: "/dsps-landing-page",
+  images: {
+    unoptimized: true,
+  },
   experimental: {
     optimizePackageImports: ["@mantine/core", "@mantine/hooks"],
   },
