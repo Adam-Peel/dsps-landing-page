@@ -39,9 +39,9 @@ export function HeroContentLeft() {
           </p>
           <br />
           <p>
-            Whether you're an agent ready to level up or a buyer looking for
-            your next opportunity, we're here to help you make smarter moves in
-            property.
+            Whether you&rsquo;re an agent ready to level up or a buyer looking
+            for your next opportunity, we&rsquo;re here to help you make smarter
+            moves in property.
           </p>
         </Text>
         <List className={classes.description} mt={30} spacing="md" size="md">
@@ -55,8 +55,7 @@ export function HeroContentLeft() {
             <b>Estate Agents</b>
             <br />
             Whether you are new to the industry or looking to go self-employed,
-            we provide consultancy and can match you with estate management
-            agencies.
+            we provide consultancy to help you fulfill your career.
           </ListItem>
 
           <ListItem

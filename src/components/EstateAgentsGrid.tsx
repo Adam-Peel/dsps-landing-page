@@ -76,8 +76,8 @@ export function EstateAgentsGrid() {
               transition into self-employment, we provide tailored consultancy
               designed to elevate your performance, sharpen your KPIs, and give
               you the confidence to succeed independently. Out mission is
-              simple. To help agents realise there's a better way to build a
-              rewarding, flexible, and profitable career in property.
+              simple. To help agents realise there&rsquo;s a better way to build
+              a rewarding, flexible, and profitable career in property.
             </Text>
           </GridCol>
           <GridCol span={{ base: 12, md: 7 }}>
