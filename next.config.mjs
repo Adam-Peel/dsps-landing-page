@@ -2,7 +2,7 @@
 import path from "path";
 const nextConfig = {
   output: "export",
-  // basePath: "/dsps-landing-page",
+  // basePath: "/",
   basePath: "/dsps-landing-page",
   images: {
     unoptimized: true,
