@@ -27,12 +27,11 @@ export default function TimeLine() {
         </Title>
       </div>
       <div className="mt-10">
-        If you&rsquo;re looking to either purchase your own home, or expand your
-        property portfolio, then take advantage of our expertise. We provide a
-        thorough service from the initial property search through to completion
-        of sales to ensure that you obtain the best information to make a
-        purchasing decision, and the best value for any purchases you do choose
-        to make.
+        We offer a dedicated property sourcing service for all types of
+        buyers—from seasoned investors to first-time home movers. We take the
+        emotion out of negotiations, ensuring you secure the right property at
+        the right price. With expert insights on property values and renovation
+        potential, we guide you to make smart, informed investment decisions.
       </div>
       <div className="mt-10 pb-12 md:pb-20">
         <Timeline active={5} bulletSize={40} lineWidth={2} reverseActive={true}>

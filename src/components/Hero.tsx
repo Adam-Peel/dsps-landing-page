@@ -12,7 +12,14 @@ import classes from "@/app/styling/HeroContentLeft.module.css";
 
 export function HeroContentLeft() {
   return (
-    <div className={classes.hero} id="about">
+    <div
+      className={classes.hero}
+      id="about"
+      style={{
+        minHeight: "100vh",
+        alignContent: "center",
+      }}
+    >
       <Overlay
         gradient="linear-gradient(180deg, rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, .75) 50%)"
         opacity={1}
@@ -23,6 +30,19 @@ export function HeroContentLeft() {
         <Text className={classes.description} size="xl" mt="xl">
           Providers of a wide range of services across the property sector
           helping estate agents and buyers nationwide.
+          <p>
+            With over six years of hands-on experience across online, corporate,
+            and self-employed estate agency, backed by 15 years in sales and
+            negotiation, we bring both depth and breadth to our advice. Having
+            been mentored by some of the best agents in the UK and Australia, we
+            combine proven methods with a fresh, personalised approach.
+          </p>
+          <br />
+          <p>
+            Whether you're an agent ready to level up or a buyer looking for
+            your next opportunity, we're here to help you make smarter moves in
+            property.
+          </p>
         </Text>
         <List className={classes.description} mt={30} spacing="md" size="md">
           <ListItem

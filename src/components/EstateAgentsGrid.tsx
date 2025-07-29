@@ -72,11 +72,12 @@ export function EstateAgentsGrid() {
               A full support service for estate agents across England.
             </Title>
             <Text className={classes.shadedtext}>
-              Whether you&rsquo;re looking to branch out to become
-              self-employed, or are looking to be recruited, we can help. We
-              have a strong record of recruitment nationwide, and can provide
-              expert consultancy and support to guide you through the necessary
-              steps of setting up solo.
+              Whether you&rsquo;re new to the role, or consdiering the
+              transition into self-employment, we provide tailored consultancy
+              designed to elevate your performance, sharpen your KPIs, and give
+              you the confidence to succeed independently. Out mission is
+              simple. To help agents realise there's a better way to build a
+              rewarding, flexible, and profitable career in property.
             </Text>
           </GridCol>
           <GridCol span={{ base: 12, md: 7 }}>
