@@ -6,7 +6,7 @@
 }
 
 .container {
-  height: 700px;
+  min-height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -16,7 +16,7 @@
   position: relative;
 
   @media (max-width: $mantine-breakpoint-sm) {
-    height: 500px;
+    min-height: 500px;
     padding-bottom: calc(var(--mantine-spacing-xl) * 3);
   }
 }

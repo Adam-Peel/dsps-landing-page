@@ -1,6 +1,8 @@
 import { createTheme } from "@mantine/core";
 
 const theme = createTheme({
+  fontFamily: "Jura, sans-serif",
+  headings: { fontFamily: "Jura, sans-serif" },
   breakpoints: {
     xs: "36em",
     sm: "48em",

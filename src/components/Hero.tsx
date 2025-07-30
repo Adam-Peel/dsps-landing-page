@@ -17,7 +17,10 @@ export function HeroContentLeft() {
       id="about"
       style={{
         minHeight: "100vh",
+        height: "100%",
         alignContent: "center",
+        display: "flex",
+        flexWrap: "wrap",
       }}
     >
       <Overlay

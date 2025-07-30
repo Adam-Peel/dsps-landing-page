@@ -3,7 +3,9 @@
 import { Burger, Button, Container, Group } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import classes from "@/app/styling/HeaderSimple.module.css";
+import Logo from "@/app/styling/dsps-graphic-orange-nobg.png";
 import Link from "next/link";
+import Image from "next/image";
 
 const links = [
   { link: "#about", label: "About us" },
@@ -24,7 +26,7 @@ export function HeaderSimple() {
   return (
     <header className={classes.header}>
       <Container size="md" className={classes.inner}>
-        LOGO HERE
+        <Image src={Logo} height={55} width={56} alt="Logo" />
         <Group gap={5} visibleFrom="xs">
           {items}
         </Group>

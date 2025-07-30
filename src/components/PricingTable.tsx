@@ -33,7 +33,7 @@ const mockdata = [
   {
     title: "Full Service",
     description:
-      "For any needs, we offer full support, guidance, consultancy and matching you with existing networks of estate agents and managament agencies.",
+      "For any needs, we offer full support, guidance, consultancy and matching you with existing networks of estate agents and management agencies.",
     icon: IconPercentage100,
     list: [
       "Feature 1",
